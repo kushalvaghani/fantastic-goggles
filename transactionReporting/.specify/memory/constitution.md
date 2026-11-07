@@ -6,13 +6,13 @@
 
 **Rationale:** Customers need a clear, accessible path to report a transaction without the assistant attempting to answer unrelated banking questions.
 
-**Rule:** The chat must greet every customer. It must only assist with reporting a transaction; for any other request, it must respond gracefully with language equivalent to: “I am here to help you with any issues with transactions.” Responses, transaction search results, selected transaction details, and the final confirmation must be rendered in the chat. The chat UI must use a modern design, display the Westpac logo, and provide a reporting-oriented placeholder such as “Report $50 at ZeroCoffeeShop”.
+**Rule:** The chat must greet every customer. It must only assist with triaging a transaction; for any other request, it must respond gracefully with language equivalent to: “I am here to help you with any issues with transactions.” Responses, transaction search results, selected transaction details, and the final confirmation must be rendered in the chat. The chat UI must use a modern design, display the Westpac logo, and provide a traiging-oriented placeholder such as “Report $50 at ZeroCoffeeShop”.
 
 **How to Apply:** Implement chat states and cards as first-class UI components. Route unsupported intents to the transaction-only response rather than improvising an answer.
 
 ### II. Deterministic Transaction Discovery and Triage
 
-**Rationale:** A reporting outcome must be explainable, reproducible, and safe to test without depending on probabilistic external services.
+**Rationale:** A traiging outcome must be explainable, reproducible, and safe to test without depending on probabilistic external services.
 
 **Rule:** The system must use local Python functions and keyword-matching heuristics to identify transaction-reporting intent, merchant names, amounts, and fraud/dispute indicators. It must ask no more than three triage questions in this order: (1) whether the merchant is known, (2) if known, whether the merchant agreed to refund, and (3) if no refund was agreed, whether the customer made the purchase. An unknown merchant or a purchase the customer did not make produces a Fraud/Scam proposal. A known merchant that will refund produces no case and directs the customer to the merchant. A customer-made purchase with no agreed refund produces a Dispute proposal.
 
