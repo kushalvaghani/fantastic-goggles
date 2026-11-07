@@ -1,7 +1,7 @@
 {
   "integration": "amp",
   "version": "1.3.0",
-  "installed_at": "2026-11-05T23:51:07.213928+00:00",
+  "installed_at": "2026-11-07T00:03:37.657184+00:00",
   "files": {
     ".agents/commands/speckit.analyze.md": "a89e327c6c6999fabdb38b234ca2c23e761c854b21d79392628a5a11efd3dc02",
     ".agents/commands/speckit.clarify.md": "715c48edcf6b7efdadb48f7aec4500ac93cfafe79d5eef335cde79056431caa5",
