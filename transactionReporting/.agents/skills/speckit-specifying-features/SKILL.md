@@ -1,5 +1,6 @@
 ---
-description: Create or update the feature specification from a natural language feature description.
+name: speckit-specifying-features
+description: Create or update a feature specification from a natural-language feature description. Use for Speckit specification work.
 handoffs:
   - label: Build Technical Plan
     agent: speckit.plan

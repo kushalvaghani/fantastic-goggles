@@ -1,5 +1,6 @@
 ---
-description: Generate an actionable, dependency-ordered tasks.md for the feature based on available design artifacts.
+name: speckit-generating-tasks
+description: Generate an actionable, dependency-ordered tasks.md from a feature's design artifacts. Use for Speckit task generation.
 handoffs:
   - label: Analyze For Consistency
     agent: speckit.analyze

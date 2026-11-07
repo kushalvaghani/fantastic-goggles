@@ -1,5 +1,6 @@
 ---
-description: Create or update the project constitution from interactive or provided principle inputs.
+name: speckit-defining-constitution
+description: Create or update the project constitution from interactive or provided principles. Use for Speckit constitution work.
 handoffs:
   - label: Build Specification
     agent: speckit.specify

@@ -1,5 +1,6 @@
 ---
-description: Identify underspecified areas in the current feature spec by asking up to 5 highly targeted clarification questions and encoding answers back into the spec.
+name: speckit-clarifying-specifications
+description: Identify underspecified areas in the current feature specification and encode answers into the spec. Use for Speckit clarification.
 handoffs:
   - label: Build Technical Plan
     agent: speckit.plan

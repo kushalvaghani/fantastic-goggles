@@ -1,5 +1,6 @@
 ---
-description: Generate a custom checklist for the current feature based on user requirements.
+name: speckit-generating-checklists
+description: Generate a custom requirements-quality checklist for the current feature. Use for Speckit checklist generation.
 ---
 
 ## Checklist Purpose: "Unit Tests for English"

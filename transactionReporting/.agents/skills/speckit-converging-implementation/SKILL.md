@@ -1,5 +1,6 @@
 ---
-description: Assess the current codebase against the feature's spec, plan, and tasks, then append any remaining unbuilt work as new tasks to tasks.md so implement can complete it.
+name: speckit-converging-implementation
+description: Assess the codebase against a feature spec, plan, and tasks, then append remaining work to tasks.md. Use for Speckit convergence.
 ---
 
 ## User Input
